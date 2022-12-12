@@ -1,10 +1,9 @@
 from random import choice
 import numpy as np
-from abc import abstractmethod, ABCMeta
 from typing import Tuple
 
 
-class ShapeBase(metaclass=ABCMeta):
+class ShapeBase:
     def rotate(self):
         self.shape = np.rot90(self.shape)
 
