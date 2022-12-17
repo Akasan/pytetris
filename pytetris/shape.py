@@ -7,6 +7,14 @@ class ShapeBase:
     def rotate(self):
         self.shape = np.rot90(self.shape)
 
+    @property
+    def width(self):
+        return self.shape.shape[1]
+
+    @property
+    def height(self):
+        return self.shape.shape[0]
+
 
 class IShape(ShapeBase):
     def __init__(self):
